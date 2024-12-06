@@ -1,0 +1,1 @@
+This repository demonstrates a common error in Dockerfiles: attempting to run a script that isn't included in the image's context. The original `Dockerfile` attempts to execute `main.py`, but this file is not included in the build context, leading to a `No such file or directory` error. The solution involves explicitly copying the `main.py` file into the image.
